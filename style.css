@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(18, 18, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+ h1,
+ h2, 
+ h3 {
+    margin: 0;
+ }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 157.4vh;
+    margin: 0 auto;
+}
+
+.header-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.3vh;
+
+}
+
+.welcome-logo {
+    margin-top: 9.3vh;
+}
+
+.recommend {
+    margin-top: 9.3vh;
+}
+
+.popularity {
+    margin-top: 3.7vh;
+}
+
+.ratings {
+    margin-top: 6.5vh;
+}
+
+.news {
+    margin-top: 6.5vh;
+}
+
+.video {
+    margin-top: 2.8vh;
+}
+
+.footer {
+    margin-top: 18.5vh;
+}
+
+/*- Шапка - */
+
+.header-up {
+    height: 8.3vh;
+}
+
+.header__list {
+    display: flex;
+    gap: 5.2vw;
+}
+
+.header__nav a {
+    font-size: 1.9vh;
+    transition: opacity 0.3s;
+}
+
+.header__nav a:hover {
+    opacity: 0.9;
+}
+
+.under-header {
+    background-color: rgba(0, 0, 0, 1);
+    height: 4.6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Мэйн часть */
+
+/* Секция Welcome */
+
+.player-img {
+    background-image: url('/images/icons/welcome-photo.png');
+    height: 68vh;
+    width: 88.5vw;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 9.3vh;
+}
+
+.btn__1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 1);
+    width: 10.4vw;
+    height: 5.6vh;
+    margin-top: 2.8vh;
+    margin-left: 2.1vw;
+}
+
+.title-1 {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 46.3vh;
+    margin-left: 2.1vw;
+}
+
+.title-2 {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2.8vh;
+    margin-left: 2.1vw;
+}
+
+
+
+/* Секция Рекомендуемые турниры */
+
+.cartochka-tournaments {
+    display: flex;
+    background-image: url('/images/icons/car-tour.jpg');
+
+    background-size: cover;
+    border-radius: 25px;
+    height: 32.4vh;
+    width: 41.7vw;
+}
+
+.cartochki {   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 35px;
+}
+
+.card__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2.8vh;
+    padding-left: 2.6vw;
+    padding-top: 2.6vw;
+}
+
+.recommend-title {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.9vh;
+    gap: 1.9vh;
+}
+
+.btn__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 13.0vw;
+    height: 4.6vh;
+    border-radius: 10px;
+    color: black;
+}
+
+/* Секция Популярные игры */
+
+.popularity__games{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2.6vw;
+}
+
+.popularity-game {
+    display: flex;
+    background-image: url('/images/icons/donate.png');
+    border-radius: 25px;
+    height: 11.1vh;
+    width: 7.8vw;
+}
+
+.popularity-game-1 {
+    display: flex;
+    background-image: url('/images/icons/donate.png');
+    border-radius: 25px;
+    height: 11.1vh;
+    width: 5.2vw;
+}
+
+/* Секция Рейтинги */
+
+.cards-ratings {  
+    display: flex;
+    justify-content: space-between;
+    gap: 5.2vw;
+}
+  
+.card {
+    width: 26.0vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9vh;
+}
+
+.card__box{
+    background-color: aliceblue;
+    height: 74.1vh;
+    width: 26.0vw;
+    border-radius: 20px;
+}
+
+.header-card__box {
+    background-color: rgba(163, 158, 158, 1);
+    height: 8.3vh;
+    width: 26.0vw;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card__footer {
+    background-color: rgba(163, 158, 158, 1);
+    height: 4.6vh;
+    width: 26.0vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratings__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.9vh;
+    gap: 1.0vw;
+}
+
+/* Секция Новости */
+
+.cards-news {
+    width: 26.0vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5.2vw;
+}
+
+.card__box__news {
+    background-color: aliceblue;
+    height: 23.1vh;
+    width: 26.0vw;
+    border-radius: 20px;
+}
+
+.card__news__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9vh;
+    padding-top: 1.9vh;
+}
+
+.news__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.9vh;
+    gap: 1.0vw;
+}
+
+/* Секция Видео */
+
+.cards-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5.21vw;
+    grid-row-gap: 1.852vh;
+}
+
+.card__box__video {
+    background-color: aliceblue;
+    height: 37vh;
+    width: 41.67vw;
+    border-radius: 20px;
+}
+
+.card__video__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.852vh;
+    padding-top: 1.852vh;
+}
+
+.video__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.852vh;
+    gap: 1.04vw;
+}
+/* Секция Футер */

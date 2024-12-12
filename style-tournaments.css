@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(18, 18, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+ h1,
+ h2, 
+ h3 {
+    margin: 0;
+ }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.header-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.footer {
+    margin-top: 200px;
+}
+
+.tournaments {
+    margin-top: 100px;
+}
+
+.popularity {
+    margin-top: 60px;
+}
+
+.table-tournaments {
+    margin-top: 60px;
+}
+
+.table-tournaments__title {
+    margin-bottom: 40px;
+}
+
+.table-footer {
+    margin-top: 20px;
+}
+
+/*- Шапка - */
+
+.header-up {
+    height: 90px;
+}
+
+.header__list {
+    display: flex;
+    gap: 100px;
+}
+
+.header__nav a {
+    font-size: 20px;
+    transition: opacity 0.3s;
+}
+
+.header__nav a:hover {
+    opacity: 0.9;
+}
+
+.under-header {
+    background-color: rgba(0, 0, 0, 1);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Мэйн часть */
+
+/* Секция Турниры */
+
+.cartochka-tournaments {
+    display: flex;
+    background-image: url('/images/icons/car-tour.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height: 350px;
+    width: 800px;
+}
+
+.cartochki {   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 35px;
+}
+
+.card__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.tournaments-title {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap:20px;
+}
+
+.btn__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    color: black;
+}
+
+/* Секция Поплуярные игры */
+
+.popularity__games{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+}
+
+.popularity-game {
+    display: flex;
+    background-image: url('/images/icons/donate.png');
+    border-radius: 25px;
+    height: 120px;
+    width: 150px;
+}
+
+.popularity-game-1 {
+    display: flex;
+    background-image: url('/images/icons/donate.png');
+    border-radius: 25px;
+    height: 120px;
+    width: 100px;
+}
+
+/* Секция Таблица турниров */
+
+.table-tournaments__title {
+    display: flex;
+    gap: 20px;
+}
+
+.table-footer {
+    background-color: rgba(89, 89, 89, 1);
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap:825px;
+}
+
+.footer-left {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 60px
+}
+
+
+.table-btn {
+    background-color: rgba(94, 139, 255, 1);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    color: rgba(224, 224, 224, 1);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-style: solid;
+}
+
+.table-btn:hover {
+    cursor: pointer;
+    background-color: rgb(54, 109, 250);
+}
+
+table {
+    width: 1700px;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+thead {
+    background-color: rgba(109, 109, 109, 1);
+    height: 70px;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    text-align: center;
+}
+  
+td:last-of-type {
+    text-align: center;
+}
+  
+tbody > tr:nth-of-type(even) {
+    background-color: rgba(64, 64, 64, 1);
+}
+
+tbody > tr {
+    background-color: rgba(49, 49, 49, 1);
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+}
+
+
+

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(18, 18, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+ h1,
+ h2, 
+ h3 {
+    margin: 0;
+ }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.header-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+
+}
+
+/*- Шапка - */
+
+.header-up {
+    height: 90px;
+}
+
+.header__list {
+    display: flex;
+    gap: 100px;
+}
+
+.header__nav a {
+    font-size: 20px;
+    transition: opacity 0.3s;
+}
+
+.header__nav a:hover {
+    opacity: 0.9;
+}
+
+.under-header {
+    background-color: rgba(0, 0, 0, 1);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
